@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/cmc/:path*",
+      "destination": "https://pro-api.coinmarketcap.com/:path*"
+    }
+  ]
+}

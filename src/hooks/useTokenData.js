@@ -12,7 +12,7 @@ const CMC_SYMBOL = (import.meta.env.VITE_CMC_SYMBOL || 'BTC').toUpperCase();
  */
 const USE_PROXY = import.meta.env.VITE_CMC_USE_PROXY !== 'false';
 const CMC_FETCH_BASE =
-  USE_PROXY && import.meta.env.DEV ? '/api/cmc/v1' : CMC_BASE;
+  USE_PROXY ? '/api/cmc/v1' : CMC_BASE;
 
 /**
  * Map CMC token + quote to our tokenData shape (matches backend realTimeDataService logic).
