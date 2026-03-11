@@ -1,0 +1,44 @@
+/* Responsive layout utilities */
+@media (max-width: 767px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+/* Smooth transitions for mobile menu */
+.sidebar-enter {
+  animation: slideIn 0.3s ease-out;
+}
+
+.sidebar-exit {
+  animation: slideOut 0.3s ease-in;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+ 
+
+/* Ensure proper stacking on mobile */
+@media (max-width: 768px) {
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+}
