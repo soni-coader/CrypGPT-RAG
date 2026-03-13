@@ -6,7 +6,7 @@ import logo from '../assets/logo/logo 1.png';
 
 export function ChatHeader({ onMenuClick, tokenData }) {
   return (
-    <div className="bg-[#202123] border-b border-white/[0.06] p-4 flex flex-col gap-4">
+    <div className="sticky top-0 z-10 flex-shrink-0 bg-[#202123] border-b border-white/[0.06] p-4 flex flex-col gap-4">
       <div className="flex items-center justify-between">
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-3">

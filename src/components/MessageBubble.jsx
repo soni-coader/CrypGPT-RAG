@@ -9,12 +9,12 @@ export function MessageBubble({ message, loading }) {
   const showDots = !isUser && loading && !message.content?.trim();
 
   return (
-    <div className={`flex ${isUser ? 'justify-end' : 'justify-start'} px-2`}>
+    <div className={`flex ${isUser ? 'justify-end' : 'justify-start'} px-2 md:px-4`}>
         <div
-          className={`max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg px-4 py-3 text-sm rounded-curve ${
+          className={`text-sm ${
             isUser
-              ? 'bg-[#303030] text-white   rounded-[18px]  rounded-br-[3px]'
-          : 'bg-[#303030] text-white rounded-[18px]  rounded-bl-[3px]'
+              ? 'max-w-[85%] sm:max-w-md px-4 py-3 rounded-[18px] rounded-br-[3px] bg-[#303030] text-white'
+              : 'w-full max-w-full py-2 text-white'
           }`}
         >
         {showDots ? (

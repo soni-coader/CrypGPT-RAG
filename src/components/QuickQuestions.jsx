@@ -5,16 +5,17 @@
 export function QuickQuestions({ onSelectQuestion }) {
   const questions = [
     'What is CrypGPT?',
-    'What are the tokenomics?',
-    'What is the roadmap?',
-    'What are the use cases?',
-    'How does the network work?'
+    'What are CrypGPT tokenomics?',
+    'What is the CrypGPT roadmap?',
+    'What are CrypGPT use cases?',
+    'How does the CrypGPT ecosystem work?',
+    'What is the CrypGPT token used for?'
   ];
 
   return (
     <div className="flex-1 overflow-y-auto p-4">
       <p className="text-xs text-white/60 mb-3 font-semibold uppercase tracking-wide">
-        Quick Questions
+        Quick Questions (CrypGPT)
       </p>
       <div className="space-y-1">
         {questions.map((question) => (

@@ -44,8 +44,8 @@ export function App() {
   };
 
   return (
-    <div className="flex h-screen md:h-screen bg-[#202123] overflow-hidden min-w-0">
-      {/* Sidebar */}
+    <div className="flex h-screen bg-[#202123] overflow-hidden min-w-0">
+      {/* Sidebar - fixed on all viewports */}
       <Sidebar
         tokenData={tokenData}
         tokenError={tokenError}
@@ -55,8 +55,9 @@ export function App() {
         onClose={closeSidebar}
       />
 
-      {/* Main Chat Area */}
-      <ChatArea
+      {/* Main Chat Area - margin-left so content doesn't sit under fixed sidebar on desktop */}
+      <div className="flex-1 flex flex-col min-h-0 min-w-0 md:ml-72">
+        <ChatArea
         messages={messages}
         loading={loading}
         error={error}
@@ -68,6 +69,7 @@ export function App() {
         tokenData={tokenData}
         onClearError={() => setError(null)}
       />
+      </div>
     </div>
   );
 }

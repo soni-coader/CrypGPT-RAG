@@ -12,8 +12,8 @@ export function ChatInput({ input, setInput, onSubmit, disabled }) {
   };
 
   return (
-    <div className="  border-t border-white/5 p-3 md:p-4 rounded-t-curve">
-      <form onSubmit={handleSubmit} className="flex gap-2 md:gap-3 max-w-3xl mx-auto">
+    <div className="border-t border-white/5 px-6 md:px-10 lg:px-16 xl:px-24 py-3 md:py-4 rounded-t-curve">
+      <form onSubmit={handleSubmit} className="flex gap-2 md:gap-3 w-full max-w-3xl mx-auto">
         <input
           type="text"
           value={input}
