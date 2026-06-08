@@ -22,13 +22,13 @@ export function ChatHeader({ onMenuClick, tokenData }) {
             <div className="flex items-center gap-2 min-w-0">
               <img
                 src={logo}
-                alt="CrypGPT"
+                alt="Cryptora"
                 className="w-8 h-8 md:w-9 md:h-9 flex-shrink-0 object-contain hidden sm:block"
               />
               <div className="min-w-0">
-                <h2 className="text-lg md:text-xl font-bold text-white truncate">CrypGPT AI Assistant</h2>
+                <h2 className="text-lg md:text-xl font-bold text-white truncate">Cryptora AI Assistant</h2>
                 <p className="text-xs md:text-sm text-white/60">
-                  Ask anything about CrypGPT token and ecosystem
+                  Ask anything about Cryptora token and ecosystem
                 </p>
               </div>
             </div>

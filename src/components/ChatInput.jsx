@@ -18,7 +18,7 @@ export function ChatInput({ input, setInput, onSubmit, disabled }) {
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Message CrypGPT..."
+          placeholder="Message Cryptora..."
           // disabled={disabled}
           className="flex-1 px-5 md:px-6 py-3 md:py-3.5 text-sm md:text-base rounded-full bg-[#303030] border border-white/10 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/20 disabled:opacity-50"
         />

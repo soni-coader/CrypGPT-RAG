@@ -1,6 +1,6 @@
 /**
  * Sidebar header component
- * Shows CrypGPT logo and branding
+ * Shows Cryptora logo and branding
  */
 import logo from '../assets/logo/logo.png';
 
@@ -10,10 +10,10 @@ export function SidebarHeader({ onClose }) {
       <div className="flex items-center gap-2 min-w-0">
         <img
           src={logo}
-          alt="CrypGPT"
+          alt="Cryptora"
           className="w-32    flex-shrink-0 object-contain"
         />
-        {/* <h1 className="text-lg font-bold text-white truncate">CrypGPT</h1> */}
+        {/* <h1 className="text-lg font-bold text-white truncate">Cryptora</h1> */}
       </div>
       <button
         onClick={onClose}

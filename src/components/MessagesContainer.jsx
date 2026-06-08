@@ -20,15 +20,15 @@ export function MessagesContainer({ messages, loading, error, messagesEndRef, on
                   <div className="w-14 md:w-16 h-14 md:h-16 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden bg-[#303030]">
                     <img
                       src={logo}
-                      alt="CrypGPT"
+                      alt="Cryptora"
                       className="w-10 h-10 md:w-12 md:h-12 object-contain"
                     />
                   </div>
                   <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
-                    Welcome to CrypGPT
+                    Welcome to Cryptora
                   </h3>
                   <p className="text-sm md:text-base text-white/60">
-                    Ask me about CrypGPT tokenomics, roadmap, use cases, or anything else!
+                    Ask me about Cryptora tokenomics, roadmap, use cases, or anything else!
                   </p>
                 </div>
               )}

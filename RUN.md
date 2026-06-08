@@ -1,4 +1,4 @@
-# CrypGPT – How to run (Frontend only, no backend)
+# Cryptora – How to run (Frontend only, no backend)
 
 Chat uses **n8n RAG agent** (webhook). Token data uses **CoinMarketCap API** directly from the frontend.
 
@@ -16,7 +16,7 @@ cp .env.example .env
 |----------|----------|---------|
 | `VITE_N8N_WEBHOOK_URL` | Yes (for chat) | n8n webhook URL for your RAG agent workflow |
 | `VITE_CMC_API_KEY` | Yes (for token info) | CoinMarketCap API key (pro-api.coinmarketcap.com) |
-| `VITE_CMC_SYMBOL` | No | Token symbol (default `BTC`). Use e.g. `CRYPGPT` for your token |
+| `VITE_CMC_SYMBOL` | No | Token symbol (default `BTC`). Use e.g. `CRYPTORA` for your token |
 | `VITE_CHAT_TIMEOUT` | No | Chat request timeout in ms (default 90000) |
 
 ## 3. Run
